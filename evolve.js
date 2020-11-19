@@ -1,6 +1,6 @@
 $(function(){
 
-const version = '0.9.12';
+const version = '1.0.3';
 $('#version').text(version);
 
 const global = { race: { species: ''} };
