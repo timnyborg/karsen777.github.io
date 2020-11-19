@@ -138,16 +138,12 @@ const achieve_list = {
     challenge: ['joyless','steelen','dissipated','technophobe','iron_will','failed_history'],    
 };
 
-const flairData = {
-    colonist: [races[global.race.species].name]
-};
-
 const achievements = {};
 Object.keys(achieve_list).forEach(function(type){
     achieve_list[type].forEach(achieve => achievements[achieve] = {
         name: loc(`achieve_${achieve}_name`),
         desc: loc(`achieve_${achieve}_desc`),
-        flair: flairData[achieve] ? loc(`achieve_${achieve}_flair`,flairData[achieve]) : loc(`achieve_${achieve}_flair`),
+        flair: loc(`achieve_${achieve}_flair`),
         type: type
     });
 });
