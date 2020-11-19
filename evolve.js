@@ -102,6 +102,7 @@ const universeData = {
 	magic: {
 		name: 'Magic',
 		code: 'mg'
+	}
 }
 
 // Achievements/feats from src/achieve.js -> const achievements = {
